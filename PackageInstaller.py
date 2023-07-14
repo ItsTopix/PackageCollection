@@ -57,7 +57,21 @@ class PackageInstaller:
         target = target.get("arch")
 
     for x in target:
-      os.system(x)
+      status = os.system(x)
+      if status != 0:
+        print("Installation abord")
+        break
+    
+    print("Remove unneeded files...")
+
+    for file in os.listdir("."):
+      if file == ".git":
+        continue
+
+      if not os.path.isdir(file):
+        continue
+
+      os.system(f"rm -rf {file}")
 
 
 if __name__ == "__main__":

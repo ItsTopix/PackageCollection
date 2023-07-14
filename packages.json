@@ -6,10 +6,7 @@
                 "sudo pacman -S --needed texlive texlive-langgerman texstudio",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/onlyoffice-bin.git",
-                "cd onlyoffice-bin",
-                "cat PKGBUILD && read",
-                "makepkg -si",
-                "cd .."
+                "cd onlyoffice-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
             ]
         }
     },
@@ -28,15 +25,9 @@
                 "sudo pacman -S --needed filezilla intellij-idea-community-edition",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
-                "cd beekeeper-studio-bin",
-                "cat PKGBUILD && read",
-                "makepkg -si",
-                "cd ..",
+                "cd beekeeper-studio-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
                 "git clone https://aur.archlinux.org/visual-studio-code-bin.git",
-                "cd visual-studio-code-bin",
-                "cat PKGBUILD && read",
-                "makepkg -si",
-                "cd .."
+                "cd visual-studio-code-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
             ]
         }
     }
