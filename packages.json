@@ -3,7 +3,7 @@
         "linux": {
             "arch": [
                 "sudo pacman -Syu",
-                "sudo pacman -S texlive texlive-langgerman texstudio",
+                "sudo pacman -S --needed texlive texlive-langgerman texstudio",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/onlyoffice-bin.git",
                 "cd onlyoffice-bin",
@@ -17,7 +17,7 @@
         "linux": {
             "arch": [
                 "sudo pacman -Syu",
-                "sudo pacman -S gimp shotcut"
+                "sudo pacman -S --needed gimp shotcut"
             ]
         }
     },
@@ -25,7 +25,7 @@
         "linux": {
             "arch": [
                 "sudo pacman -Syu",
-                "sudo pacman -S filezilla intellij-idea-community-edition",
+                "sudo pacman -S --needed filezilla intellij-idea-community-edition",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
                 "cd beekeeper-studio-bin",

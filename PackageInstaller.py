@@ -51,11 +51,13 @@ class PackageInstaller:
 
     print(f"Installing package {package}...")
     
-    match sys.platform:
-      case "linux":
-        pass
-      case "win32":
-        pass
+    target = self.packages.get(package).get(sys.platform)
+    
+    if sys.platform == "linux":
+        target = target.get("arch")
+
+    for x in target:
+      os.system(x)
 
 
 if __name__ == "__main__":
