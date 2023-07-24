@@ -35,7 +35,7 @@
     	"linux": {
     	    "arch": [
     	    	"sudo pacman -Syu",
-    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils",
+    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng",
                 "git clone https://aur.archlinux.org/burpsuite.git",
                 "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
                 "git clone https://aur.archlinux.org/wordlists.git",
