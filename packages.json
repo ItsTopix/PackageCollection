@@ -27,10 +27,20 @@
                 "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
                 "cd beekeeper-studio-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
                 "git clone https://aur.archlinux.org/visual-studio-code-bin.git",
-                "cd visual-studio-code-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
-                "git clone https://aur.archlinux.org/burpsuite.git",
-                "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
+                "cd visual-studio-code-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
             ]
         }
+    },
+    "hacking": {
+    	"linux": {
+    	    "arch": [
+    	    	"sudo pacman -Syu",
+    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils",
+                "git clone https://aur.archlinux.org/burpsuite.git",
+                "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
+                "git clone https://aur.archlinux.org/wordlists.git",
+                "cd wordlists && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
+    	    ]
+    	}
     }
 }
