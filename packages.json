@@ -3,7 +3,7 @@
         "linux": {
             "arch": [
                 "sudo pacman -Syu",
-                "sudo pacman -S --needed texlive texlive-langgerman texstudio",
+                "sudo pacman -S --needed texlive texlive-langgerman texstudio nextcloud-client",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/onlyoffice-bin.git",
                 "cd onlyoffice-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
@@ -22,7 +22,7 @@
         "linux": {
             "arch": [
                 "sudo pacman -Syu",
-                "sudo pacman -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python",
+                "sudo pacman -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
                 "cd beekeeper-studio-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
@@ -35,7 +35,7 @@
     	"linux": {
     	    "arch": [
     	    	"sudo pacman -Syu",
-    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng",
+    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools",
                 "git clone https://aur.archlinux.org/burpsuite.git",
                 "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
                 "git clone https://aur.archlinux.org/wordlists.git",
