@@ -42,5 +42,21 @@
                 "cd wordlists && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
     	    ]
     	}
+    },
+    "reverse_engineering": {
+        "linux":{
+            "arch": [
+                "sudo pacman -Syu",
+                "sudo pacman -S --needed ghidra gdb"
+            ]
+        }
+    },
+    "monitoring": {
+        "linux" :{
+            "arch": [
+                "sudo pacman -Syu",
+                "sudo pacman -S --needed powertop htop iptraf-ng iotop"
+            ]
+        }
     }
 }
