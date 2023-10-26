@@ -1,8 +1,17 @@
 {
+    "intel-driver": {
+        "linux": {
+            "arch": [
+              "sudo pacman -Syyu",
+              "sudo pacman -S --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode",
+              "sudo pacman -Rs xf86-video-intel"
+            ] 
+        }
+    },
     "office": {
         "linux": {
             "arch": [
-                "sudo pacman -Syu",
+                "sudo pacman -Syyu",
                 "sudo pacman -S --needed texlive texlive-langgerman texstudio nextcloud-client",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/onlyoffice-bin.git",
@@ -13,7 +22,7 @@
     "media": {
         "linux": {
             "arch": [
-                "sudo pacman -Syu",
+                "sudo pacman -Syyu",
                 "sudo pacman -S --needed gimp shotcut"
             ]
         }
@@ -21,7 +30,7 @@
     "development": {
         "linux": {
             "arch": [
-                "sudo pacman -Syu",
+                "sudo pacman -Syyu",
                 "sudo pacman -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx",
                 "sudo pacman -S --needed base-devel git",
                 "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
@@ -34,7 +43,7 @@
     "hacking": {
     	"linux": {
     	    "arch": [
-    	    	"sudo pacman -Syu",
+    	    	"sudo pacman -Syyu",
     	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools",
                 "git clone https://aur.archlinux.org/burpsuite.git",
                 "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
@@ -46,7 +55,7 @@
     "reverse_engineering": {
         "linux":{
             "arch": [
-                "sudo pacman -Syu",
+                "sudo pacman -Syyu",
                 "sudo pacman -S --needed ghidra gdb"
             ]
         }
@@ -54,7 +63,7 @@
     "monitoring": {
         "linux" :{
             "arch": [
-                "sudo pacman -Syu",
+                "sudo pacman -Syyu",
                 "sudo pacman -S --needed powertop htop iptraf-ng iotop"
             ]
         }
