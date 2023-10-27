@@ -18,10 +18,13 @@ class PackageInstaller:
     i = 1
     self.mapping = {}
     for package in self.packages.keys():
+      if package == "initial":
+          self.initial = package
+          continue
       self.mapping[str(i)] = package
       i += 1
     self.mapping[str(i)] = "exit"
-
+    self.exitmapping = str(i)
 
   def print_available(self):
     print("Verfügbare Pakete:")
@@ -41,6 +44,9 @@ class PackageInstaller:
       print("Die Auswahl ist ungültig...")
       return
 
+    if len(choices) >= 1:
+      if choices[0] != self.exitmapping:
+        self.install_package(self.initial)
     for choice in choices:
       self.install_package(self.mapping.get(choice))
 

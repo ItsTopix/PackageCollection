@@ -1,58 +1,58 @@
 {
+    "initial": {
+        "linux": {
+            "arch": [
+                "yay -Syyu"
+            ]
+        }
+    },
     "intel-driver": {
         "linux": {
             "arch": [
-              "sudo yay -Syyu",
-              "sudo yay -S --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode",
-              "sudo yay -Rs xf86-video-intel"
+              "yay -S --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode",
+              "yay -Rs xf86-video-intel"
             ] 
         }
     },
     "office": {
         "linux": {
             "arch": [
-                "sudo yay -Syyu",
-                "sudo yay -S --needed texlive texlive-langgerman texstudio nextcloud-client onlyoffice-bin"
+                "yay -S --needed texlive texlive-langgerman texstudio nextcloud-client onlyoffice-bin"
             ]
         }
     },
     "media": {
         "linux": {
             "arch": [
-                "sudo yay -Syyu",
-                "sudo yay -S --needed gimp shotcut"
+                "yay -S --needed gimp shotcut"
             ]
         }
     },
     "development": {
         "linux": {
             "arch": [
-                "sudo yay -Syyu",
-                "sudo yay -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin visual-studio-code-bin"
+                "yay -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin visual-studio-code-bin"
             ]
         }
     },
     "hacking": {
-    	"linux": {
-    	    "arch": [
-    	    	"sudo yay -Syyu",
-    	    	"sudo yay -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
-    	    ]
-    	}
+    	  "linux": {
+    	      "arch": [
+    	        	"yay -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
+    	      ]
+    	  }
     },
     "reverse_engineering": {
         "linux":{
             "arch": [
-                "sudo yay -Syyu",
-                "sudo yay -S --needed ghidra gdb"
+                "yay -S --needed ghidra gdb"
             ]
         }
     },
     "monitoring": {
         "linux" :{
             "arch": [
-                "sudo yay -Syyu",
-                "sudo yay -S --needed powertop htop iptraf-ng iotop"
+                "yay -S --needed powertop htop iptraf-ng iotop"
             ]
         }
     }
