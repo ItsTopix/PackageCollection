@@ -2,69 +2,57 @@
     "intel-driver": {
         "linux": {
             "arch": [
-              "sudo pacman -Syyu",
-              "sudo pacman -S --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode",
-              "sudo pacman -Rs xf86-video-intel"
+              "sudo yay -Syyu",
+              "sudo yay -S --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode",
+              "sudo yay -Rs xf86-video-intel"
             ] 
         }
     },
     "office": {
         "linux": {
             "arch": [
-                "sudo pacman -Syyu",
-                "sudo pacman -S --needed texlive texlive-langgerman texstudio nextcloud-client",
-                "sudo pacman -S --needed base-devel git",
-                "git clone https://aur.archlinux.org/onlyoffice-bin.git",
-                "cd onlyoffice-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
+                "sudo yay -Syyu",
+                "sudo yay -S --needed texlive texlive-langgerman texstudio nextcloud-client onlyoffice-bin"
             ]
         }
     },
     "media": {
         "linux": {
             "arch": [
-                "sudo pacman -Syyu",
-                "sudo pacman -S --needed gimp shotcut"
+                "sudo yay -Syyu",
+                "sudo yay -S --needed gimp shotcut"
             ]
         }
     },
     "development": {
         "linux": {
             "arch": [
-                "sudo pacman -Syyu",
-                "sudo pacman -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx",
-                "sudo pacman -S --needed base-devel git",
-                "git clone https://aur.archlinux.org/beekeeper-studio-bin.git",
-                "cd beekeeper-studio-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
-                "git clone https://aur.archlinux.org/visual-studio-code-bin.git",
-                "cd visual-studio-code-bin && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
+                "sudo yay -Syyu",
+                "sudo yay -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin visual-studio-code-bin"
             ]
         }
     },
     "hacking": {
     	"linux": {
     	    "arch": [
-    	    	"sudo pacman -Syyu",
-    	    	"sudo pacman -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools",
-                "git clone https://aur.archlinux.org/burpsuite.git",
-                "cd burpsuite && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si",
-                "git clone https://aur.archlinux.org/wordlists.git",
-                "cd wordlists && echo check sources!: && cat PKGBUILD | grep source && read && makepkg -si"
+    	    	"sudo yay -Syyu",
+    	    	"sudo yay -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
     	    ]
     	}
     },
     "reverse_engineering": {
         "linux":{
             "arch": [
-                "sudo pacman -Syyu",
-                "sudo pacman -S --needed ghidra gdb"
+                "sudo yay -Syyu",
+                "sudo yay -S --needed ghidra gdb"
             ]
         }
     },
     "monitoring": {
         "linux" :{
             "arch": [
-                "sudo pacman -Syyu",
-                "sudo pacman -S --needed powertop htop iptraf-ng iotop"
+                "sudo yay -Syyu",
+                "sudo yay -S --needed powertop htop iptraf-ng iotop"
             ]
         }
     }
