@@ -24,7 +24,7 @@
     "media": {
         "linux": {
             "arch": [
-                "yay -S --needed gimp shotcut discord drawio-desktop easyeffects vlc"
+                "yay -S --needed gimp shotcut discord drawio-desktop easyeffects vlc obs-studio qt6-wayland"
             ]
         }
     },
