@@ -76,5 +76,12 @@
                 "yay -S --needed powertop htop iptraf-ng iotop"
             ]
         }
+    },
+    "android": {
+        "linux": {
+            "arch": [
+                "yay -S --needed mtpfs gvfs-mtp gvfs-gphoto2 android-tools scrcpy"
+            ]
+        }
     }
 }
