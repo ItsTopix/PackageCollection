@@ -17,14 +17,21 @@
     "office": {
         "linux": {
             "arch": [
-                "yay -S --needed texlive texlive-langgerman nextcloud-client onlyoffice-bin"
+                "yay -S --needed nextcloud-client onlyoffice-bin drawio-desktop"
             ]
         }
     },
-    "media": {
+    "latex": {
         "linux": {
             "arch": [
-                "yay -S --needed gimp shotcut discord drawio-desktop easyeffects vlc obs-studio qt6-wayland"
+                "yay -S --needed texlive texlive-langgerman visual-studio-code-bin"
+            ]
+        }
+    },
+    "multimedia": {
+        "linux": {
+            "arch": [
+                "yay -S --needed gimp shotcut easyeffects vlc obs-studio qt6-wayland"
             ]
         }
     },
@@ -35,10 +42,17 @@
             ]
         }
     },
+    "virtualization": {
+        "linux": {
+            "arch": [
+                "yay -S --needed virtualbox"
+            ]
+        }
+    },
     "development": {
         "linux": {
             "arch": [
-                "yay -S --needed filezilla intellij-idea-community-edition virtualbox jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin visual-studio-code-bin cmake qtcreator"
+                "yay -S --needed filezilla intellij-idea-community-edition jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin visual-studio-code-bin cmake qtcreator"
             ]
         }
     },
