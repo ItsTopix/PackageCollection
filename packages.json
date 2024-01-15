@@ -20,6 +20,13 @@
             ]
         }
     },
+    "gnome": {
+        "linux": {
+            "arch": [
+              "yay -S --needed gdm gnome-backgrounds gnome-color-manager gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-terminal gnome-menus gnome-keyring gnome-bluetooth-3.0 gnome-autoar gnome-system-monitor nautilus"
+            ]
+        }
+    },
     "office": {
         "linux": {
             "arch": [
