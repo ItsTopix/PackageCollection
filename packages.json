@@ -9,14 +9,14 @@
     "intel-driver": {
         "linux": {
             "arch": [
-              "yay -S --needed xf86-video-intel mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver intel-ucode"
+              "yay -S --needed xf86-video-intel mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver"
             ] 
         }
     },
     "amdgpu-driver": {
         "linux": {
             "arch": [
-              "yay -S --needed mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau"
+              "yay -S --needed xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver libva-utils mesa-vdpau lib32-mesa-vdpau opencl-clover-mesa lib32-opencl-clover-mesa"
             ]
         }
     },
