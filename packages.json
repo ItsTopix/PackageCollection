@@ -27,6 +27,13 @@
             ]
         }
     },
+    "sway": {
+        "linux": {
+	    "arch": [
+	        "yay -S --needed sway swaybg waybar network-manager-applet"
+	    ]
+	}
+    },
     "office": {
         "linux": {
             "arch": [
