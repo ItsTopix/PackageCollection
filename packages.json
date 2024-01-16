@@ -30,7 +30,7 @@
     "sway": {
         "linux": {
 	    "arch": [
-	        "yay -S --needed sway swaybg waybar dmenu network-manager-applet"
+	        "yay -S --needed sway swaybg waybar dmenu pavucontrol network-manager-applet"
 	    ]
 	}
     },
