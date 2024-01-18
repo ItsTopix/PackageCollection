@@ -72,7 +72,7 @@
     "development": {
         "linux": {
             "arch": [
-                "yay -S --needed filezilla intellij-idea-community-edition jdk-openjdk python docker docker-compose docker-buildx beekeeper-studio-bin cmake qtcreator"
+                "yay -S --needed nodejs npm jdk-openjdk python docker docker-compose docker-buildx"
             ]
         }
     },
