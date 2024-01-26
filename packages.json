@@ -30,7 +30,7 @@
     "sway": {
         "linux": {
 	    "arch": [
-	        "yay -S --needed sway swaybg waybar light fuzzel pavucontrol sof-firmware network-manager-applet alacritty"
+	        "yay -S --needed sway swaylock swaybg waybar light fuzzel pavucontrol sof-firmware network-manager-applet alacritty"
 	    ]
 	}
     },
