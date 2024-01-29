@@ -79,7 +79,7 @@
     "wine": {
         "linux": {
             "arch": [
-                "yay -S --needed vkd3d lib32-vkd3d wine-mono wine-staging winetricks"
+                "yay -S --needed vkd3d lib32-vkd3d wine-mono wine-staging winetricks gnutls lib32-gnutls"
             ]
         }
     },
