@@ -72,7 +72,7 @@
     "development": {
         "linux": {
             "arch": [
-                "yay -S --needed nodejs npm jdk-openjdk python docker docker-compose docker-buildx"
+                "yay -S --needed nodejs npm jdk-openjdk python docker docker-compose docker-buildx visual-studio-code-bin"
             ]
         }
     },
