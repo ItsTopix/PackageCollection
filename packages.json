@@ -94,7 +94,7 @@
     "hacking": {
     	  "linux": {
     	      "arch": [
-    	        	"yay -S --needed nmap openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
+    	        	"yay -S --needed nmap libnfc openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
     	      ]
     	  }
     },
