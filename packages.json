@@ -52,7 +52,7 @@
     "multimedia": {
         "linux": {
             "arch": [
-                "yay -S --needed gimp shotcut easyeffects vlc obs-studio qt6-wayland inkscape"
+                "yay -S --needed gimp shotcut easyeffects calf vlc obs-studio qt6-wayland inkscape"
             ]
         }
     },
