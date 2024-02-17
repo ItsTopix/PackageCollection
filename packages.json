@@ -23,7 +23,7 @@
     "gnome": {
         "linux": {
             "arch": [
-              "yay -S --needed gdm plymouth archlinux-wallpaper gnome-backgrounds gnome-color-manager gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-terminal gnome-menus gnome-keyring gnome-bluetooth-3.0 gnome-autoar gnome-system-monitor gnome-tweaks gnome-control-center gnome-shell-extension-appindicator nautilus xdg-desktop-portal-gnome",
+              "yay -S --needed xdg-user-dirs gdm plymouth archlinux-wallpaper gnome-backgrounds gnome-color-manager gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-terminal gnome-menus gnome-keyring gnome-bluetooth-3.0 gnome-autoar gnome-system-monitor gnome-tweaks gnome-control-center gnome-shell-extension-appindicator nautilus xdg-desktop-portal-gnome",
 	      "sudo systemctl enable gdm"
             ]
         }
