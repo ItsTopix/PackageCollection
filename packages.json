@@ -120,5 +120,15 @@
                 "yay -S --needed mtpfs gvfs-mtp gvfs-gphoto2 android-tools scrcpy"
             ]
         }
+    },
+    "waydroid": {
+    	"linux": {
+	    "arch": [
+		"yay -S waydroid",
+		"waydroid init -s GAPPS",
+		"sudo systemctl enable --now waydroid-container",
+		"echo register google cert at https://docs.waydro.id/faq/google-play-certification"
+	    ]
+	}
     }
 }
