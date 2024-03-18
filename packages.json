@@ -127,7 +127,9 @@
 		"yay -S waydroid",
 		"sudo waydroid init -s GAPPS",
 		"sudo systemctl enable --now waydroid-container",
-		"echo register google cert at https://docs.waydro.id/faq/google-play-certification"
+		"echo register google cert at https://docs.waydro.id/faq/google-play-certification",
+		"sudo pacman -S wl-clipboard",
+	        "sudo pip install pyclip --break-system-packages"
 	    ]
 	}
     }
