@@ -9,21 +9,21 @@
     "intel-driver": {
         "linux": {
             "arch": [
-              "yay -S --needed xf86-video-intel mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver"
+              "yay -S --needed --noconfirm xf86-video-intel mesa lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver lib32-libva-intel-driver libva-utils intel-compute-runtime intel-gmmlib intel-media-driver"
             ] 
         }
     },
     "amdgpu-driver": {
         "linux": {
             "arch": [
-              "yay -S --needed xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver libva-utils mesa-vdpau lib32-mesa-vdpau opencl-clover-mesa lib32-opencl-clover-mesa"
+              "yay -S --needed --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver libva-utils mesa-vdpau lib32-mesa-vdpau opencl-clover-mesa lib32-opencl-clover-mesa"
             ]
         }
     },
     "gnome": {
         "linux": {
             "arch": [
-              "yay -S --needed xdg-user-dirs gdm plymouth archlinux-wallpaper gnome-backgrounds gnome-color-manager gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-terminal gnome-menus gnome-keyring gnome-bluetooth-3.0 gnome-autoar gnome-system-monitor gnome-tweaks gnome-control-center gnome-shell-extension-appindicator nautilus xdg-desktop-portal-gnome",
+              "yay -S --needed --noconfirm xdg-user-dirs gdm plymouth archlinux-wallpaper gnome-backgrounds gnome-color-manager gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-terminal gnome-menus gnome-keyring gnome-bluetooth-3.0 gnome-autoar gnome-system-monitor gnome-tweaks gnome-control-center gnome-shell-extension-appindicator nautilus xdg-desktop-portal-gnome",
 	      "sudo systemctl enable gdm",
 	      "xdg-user-dirs-update",
 	      "sudo localectl set-x11-keymap de"
@@ -33,102 +33,102 @@
     "sway": {
         "linux": {
 	    "arch": [
-	        "yay -S --needed sway swaylock swaybg waybar light fuzzel pavucontrol network-manager-applet alacritty"
+	        "yay -S --needed --noconfirm sway swaylock swaybg waybar light fuzzel pavucontrol network-manager-applet alacritty"
 	    ]
 	}
     },
     "office": {
         "linux": {
             "arch": [
-                "yay -S --needed nextcloud-client onlyoffice-bin drawio-desktop"
+                "yay -S --needed --noconfirm pipewire-jack nextcloud-client onlyoffice-bin drawio-desktop"
             ]
         }
     },
     "latex": {
         "linux": {
             "arch": [
-                "yay -S --needed texlive texlive-langgerman"
+                "yay -S --needed --noconfirm texlive texlive-langgerman"
             ]
         }
     },
     "multimedia": {
         "linux": {
             "arch": [
-                "yay -S --needed gimp upscayl-bin shotcut easyeffects calf vlc obs-studio qt6-wayland inkscape"
+                "yay -S --needed --noconfirm gimp upscayl-bin qt6-multimedia-ffmpeg shotcut easyeffects calf vlc obs-studio qt6-wayland inkscape"
             ]
         }
     },
     "graphics-tablet": {
         "linux": {
             "arch": [
-                "yay -S --needed xournalpp libwacom xf86-input-wacom libinput"
+                "yay -S --needed --noconfirm xournalpp libwacom xf86-input-wacom libinput"
             ]
         }
     },
     "virtualization": {
         "linux": {
             "arch": [
-                "yay -S --needed virtualbox virtualbox-guest-iso virtualbox-guest-utils virtualbox-ext-vnc libvirt"
+                "yay -S --needed --noconfirm virtualbox virtualbox-host-dkms virtualbox-guest-iso virtualbox-guest-utils virtualbox-ext-vnc libvirt"
             ]
         }
     },
     "development": {
         "linux": {
             "arch": [
-                "yay -S --needed nodejs npm jdk-openjdk python docker docker-compose docker-buildx visual-studio-code-bin filezilla"
+                "yay -S --needed --noconfirm nodejs npm jdk-openjdk python docker docker-compose docker-buildx visual-studio-code-bin filezilla"
             ]
         }
     },
     "wine": {
         "linux": {
             "arch": [
-                "yay -S --needed vkd3d lib32-vkd3d wine-mono wine-staging winetricks gnutls lib32-gnutls"
+                "yay -S --needed --noconfirm vkd3d lib32-vkd3d wine-mono wine-staging winetricks gnutls lib32-gnutls"
             ]
         }
     },
     "sounds-driver": {
         "linux": {
             "arch": [
-                "yay -S --needed pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse lib32-libpipewire lib32-pipewire lib32-pipewire-jack libpipewire wireplumber libwireplumber sof-firmware"
+                "yay -S --needed --noconfirm pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse lib32-libpipewire lib32-pipewire lib32-pipewire-jack libpipewire wireplumber libwireplumber sof-firmware"
             ]
         }
     },
     "hacking": {
     	  "linux": {
     	      "arch": [
-    	        	"yay -S --needed nmap libnfc openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
+    	        	"yay -S --needed --noconfirm nmap libnfc openbsd-netcat john hashcat hashcat-utils wireshark-qt aircrack-ng hydra metasploit inetutils net-tools burpsuite wordlists"
     	      ]
     	  }
     },
     "reverse-engineering": {
         "linux":{
             "arch": [
-                "yay -S --needed ghidra gdb"
+                "yay -S --needed --noconfirm ghidra gdb"
             ]
         }
     },
     "monitoring": {
         "linux" :{
             "arch": [
-                "yay -S --needed powertop htop iptraf-ng iotop"
+                "yay -S --needed --noconfirm powertop htop iptraf-ng iotop"
             ]
         }
     },
     "android": {
         "linux": {
             "arch": [
-                "yay -S --needed mtpfs gvfs-mtp gvfs-gphoto2 android-tools scrcpy"
+                "yay -S --needed --noconfirm mtpfs gvfs-mtp gvfs-gphoto2 android-tools scrcpy"
             ]
         }
     },
     "waydroid": {
     	"linux": {
 	    "arch": [
-		"yay -S waydroid",
+		"yay -S --noconfirm waydroid",
 		"sudo waydroid init -s GAPPS",
 		"sudo systemctl enable --now waydroid-container",
 		"echo register google cert at https://docs.waydro.id/faq/google-play-certification",
-		"sudo pacman -S wl-clipboard",
+		"sudo pacman -S --needed --noconfirm wl-clipboard",
 	        "sudo pip install pyclip --break-system-packages"
 	    ]
 	}
