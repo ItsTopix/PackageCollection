@@ -20,6 +20,13 @@
             ]
         }
     },
+    "amdgpu-pro": {
+    	"linux": {
+	    "arch": [
+		"yay -S --needed --noconfirm amdgpu-pro-oglp lib32-amdgpu-pro-oglp vulkan-amdgpu-pro lib32-vulkan-amdgpu-pro amf-amdgpu-pro opencl-amd"
+	    ]
+	}
+    },
     "gnome": {
         "linux": {
             "arch": [
