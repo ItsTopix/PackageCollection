@@ -11,6 +11,14 @@
       ]
     }
   },
+  "intel+nvidia-driver": {
+    "linux": {
+      "arch": [
+        "yay -S --needed --noconfirm nvidia-dkms nvidia-utils lib32-nvidia-utils",
+        "sudo nvidia-xconfig"
+      ]
+    }
+  },
   "amdgpu-driver": {
     "linux": {
       "arch": [
