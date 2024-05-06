@@ -14,8 +14,9 @@
   "intel+nvidia-driver": {
     "linux": {
       "arch": [
-        "yay -S --needed --noconfirm nvidia-dkms nvidia-utils lib32-nvidia-utils",
-        "sudo nvidia-xconfig"
+        "yay -S --needed --noconfirm nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-prime",
+        "sudo nvidia-xconfig",
+	"echo options nvidia_drm modeset=1 | sudo tee /etc/modprobe.d/nvidia.conf"
       ]
     }
   },
