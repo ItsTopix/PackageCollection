@@ -47,7 +47,7 @@
   "office": {
     "linux": {
       "arch": [
-        "yay -S --needed --noconfirm pipewire-jack nextcloud-client onlyoffice-bin drawio-desktop"
+        "yay -S --needed --noconfirm pipewire-jack onlyoffice-bin drawio-desktop"
       ]
     }
   },
